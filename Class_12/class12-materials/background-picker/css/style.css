@@ -1,0 +1,56 @@
+/******************************************
+/* HOT GARBAGE - PLEASE DON'T MIMIC THIS CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Permanent Marker', Arial, Helvetica, sans-serif;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+h1 {
+  text-align: center;
+  font-size: 60px;
+}
+section {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: flex-end;
+}
+img {
+  border: 3px solid black;
+  width: 150px;
+}
+.red-border {
+  border: 3px solid red;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+#cte{
+  background: url(../img/01-cte.jpg);
+}
+#tyhb{
+  background: url(../img/02-cte.jpg);
+}
+#melo{
+  background: url(../img/03-cte.jpg);
+}
+#tmip{
+  background: url(../img/04-cte.jpg);
+}
+#social-cues{
+  background: url(../img/05-cte.jpg);
+}
+#neon-pill{
+  background: url(../img/06-cte.jpg);
+}

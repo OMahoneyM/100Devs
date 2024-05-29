@@ -1,0 +1,225 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+padding: 0 5%;
+}
+h1, h2, h3, h4, h5, h6, span, a {
+  text-transform: uppercase;
+}
+.btn {
+  padding: 15px 25px;
+  background: black;
+  text-decoration: none;
+  color: white;
+  font-size:small;
+  display: inline-block;
+  margin: 20px 0;
+}
+.btn-alt {
+  background: white;
+  color: black;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+width: 100%;
+margin: 0 auto;
+height: 100px;
+padding: 20px 0;
+}
+header > a {
+  float: left;
+  text-transform: none;
+}
+header nav {
+  margin: 0;
+  padding: 0;
+  float: right;
+  width: 80%;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+}
+header nav li {
+  list-style-type: none;
+  display: inline;
+  float: left;
+  text-transform: uppercase;
+}
+header nav img {
+  height: 15px;
+}
+header nav li:last-child {
+  float: right;
+}
+header a {
+  color: black;
+  text-decoration: none;
+}
+header nav a {
+  padding: 15px;
+}
+header nav a:hover {
+  background: plum;
+  color: white;
+}
+header nav li:last-child a:hover {
+  background: black;
+  color: white;
+}
+main > section {
+  height: 300px;
+  padding: 0 5%;
+  margin: 60px 0;
+  width: 100%;
+}
+main .section-1 {
+  /* margin-top: 10%; */
+  height: 550px;
+}
+main .section-1 > * {
+  float: left;
+}
+main .section-1 > section {
+  width: 100%;
+  height: 50%;
+}
+main .section-1 section section {
+  width: 70%;
+  position: relative;
+}
+main .section-1 section span {
+  display: block;
+}
+main .section-1 section span + a {
+  margin-bottom: 0;
+}
+main .section-1 section + section {
+  width: 22%;
+  /* padding-left: 20px; */
+  transform: rotate(90deg);
+  position: absolute;
+  right: 0;
+}
+main .section-1 aside {
+  background: black;
+  color: white;
+  padding: 30px 30px 30px 0;
+  width: 30%;
+}
+main aside > * {
+  display: block;
+}
+main .section-1 aside span:first-child {
+  border-left: 5px solid white;
+  padding: 20px 0 20px 30px;
+}
+main aside > div * {
+  display: inline;
+}
+main .section-1 aside > div {
+  padding: 10px 0 10px 30px;
+}
+main aside div > div {
+  font-weight: bold;
+  font-size: xx-large;
+}
+main .section-1 aside a {
+  width: 60%;
+  margin: 20px 0 0 30px;
+}
+main .section-2 {
+}
+main .section-2 *,
+.section-4 * {
+  float: left;
+  width: 30%;
+}
+main .section-2 > section *,
+.section-4 > section * {
+  display: inline;
+  width: 100%;
+  text-align: center;
+}
+main .section-2 img {
+  width: 15%;
+}
+main .section-3 section {
+  width: 50%;
+  float: left;
+  padding: 0 30px;
+}
+main .section-4 img {
+  height: 200px;
+  position: relative;
+}
+main .section-4 div {
+  background: black;
+  color: white;
+  display: block;
+  width: 80%;
+  padding-bottom: 10px;
+  margin-left: 10%;
+  position: relative;
+  top: -20px;
+}
+main .section-4 h4 {
+  margin-bottom: 5px;
+  margin-top: 10px
+}
+main .section-5 aside {
+  padding: 30px;
+  width: 50%;
+}
+main .section-5 aside span:first-child {
+  padding-bottom: 20px;
+}
+main .section-5 aside span:last-child {
+  font-size: x-large;
+}
+main .section-6 {
+  text-align: center;
+  height: 500px;
+}
+.section-6 .lb-top,
+.section-6 .lb-bottom {
+  width: 100%;
+}
+main .section-6 div {
+  width: 33%;
+  float: left;
+}
+main .section-6 div {
+  height: 100px;
+}
+main .section-6 div:nth-of-type(2n) {
+  height: 300px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

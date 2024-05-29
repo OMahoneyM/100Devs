@@ -1,0 +1,167 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  background: slategray;
+}
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  background: slategray;
+  color: white;
+  height: 70px;
+}
+header nav * {
+  float: left;
+  width: 20%;
+  color: white;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+header nav ul {
+  width: 45%;
+}
+header li a {
+  width: 100%;
+}
+header nav > a {
+  background: white;
+  color: slategray;
+  padding: 16px;
+  margin: 10px 20px 0 0;
+  text-align: center;
+  border-radius: 5px;
+  float: right;
+  width: 10%;
+}
+header nav img {
+  margin-top: 20px;
+}
+main {
+  text-align: center;
+}
+main > section:first-of-type {
+  color: white;
+}
+main > section {
+  height: 300px;
+  padding: 50px 0;
+}
+main > section > section {
+  width: 50%;
+  float: left;
+}
+main > section:nth-of-type(even) {
+  background: white;
+}
+main > section:nth-of-type(3) {
+  background: lightgray;
+}
+main section > a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 10px 25px;
+  margin-top: 10px;
+  display: inline-block;
+}
+footer {
+  background: navy;
+  color: white;
+  height: 200px;
+}
+footer * {
+  display: block;
+  float: left;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer > section:first-of-type {
+  height: 75%;
+}
+footer > section > section {
+  float: left;
+  display: block;
+  width: 50%;
+}
+.socials,
+.site-map,
+.contribute {
+  width: 100%;
+}
+.site-map span,
+.contribute span {
+  width: 100%;
+  color: gray;
+  text-transform: uppercase;
+  padding: 10px 0 0 10px;
+}
+.socials img {
+  padding: 10px 0 0 10px;
+  width: 7%;
+}
+footer ul {
+  padding: 0;
+  margin: 0;
+}
+footer ul * {
+  float: left;
+  display: block;
+  margin: 2px 0 2px 5px;
+}
+footer .biz-address {
+  padding-top: 10px;
+}
+footer .biz-address * {
+  float: right;
+  width: 60%;
+}
+footer .biz-address span {
+  font-weight: 700;
+}
+.biz-address p{
+  margin: 10px 0 0 0;
+  display: inline;
+}
+footer .legal {
+  height: 25%;
+  border-top: 1px solid white;
+  display: block;
+  width: 100%;
+}
+footer .legal img {
+  float: right;
+  margin: 16px 10px 16px 0;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

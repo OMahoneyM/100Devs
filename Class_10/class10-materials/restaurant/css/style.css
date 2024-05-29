@@ -1,0 +1,229 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  background-color: white;
+  color: black;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+h1, h2, h3, 
+.phone-num, 
+.hours {
+  font-family:'Times New Roman', Times, serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header {
+ height: 100px;
+ padding: 20px 30px;
+}
+header > img {
+  float: left;
+  height: 50px;
+}
+header ul {
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+header li {
+  list-style-type: none;
+  display: inline;
+}
+header li a {
+  color: black;
+  text-decoration: none;
+  float: left;
+  padding: 20px;
+}
+header li a:hover {
+  color: white;
+  background: orange;
+}
+header li img {
+  height: 20px;
+}
+main {
+  padding: 0 30px;
+}
+main > section {
+  height: 350px;
+}
+main .section-1 {
+  padding-top: 20px;
+}
+main section > span {
+  text-transform: uppercase;
+  color: orange;
+}
+main .section-1,
+main .section-2 {
+  width: 60%;
+}
+.section-1 form {
+  width: 100%;
+}
+.section-1 input:first-of-type {
+  color: gray;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 2px solid lightgray;
+  padding: 10px;
+  width: 60%;
+}
+.section-1 input:last-of-type {
+  background: orange;
+  color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 2px solid orange;
+  padding: 10px;
+  width: 20%;
+}
+.section-1 ul {
+  height: 100px;
+  padding: 20px 0 0 0;
+}
+.section-1 li {
+  list-style-type: none;
+  display: inline;
+  padding: 20px;
+}
+.section-1 li a {
+  color: black;
+  text-decoration: none;
+  float: left;
+  padding-right: 10%;
+}
+.section-1 img {
+  height: 20px;
+  padding-right: 5px;
+}
+.section-2 {
+  float: right;
+}
+.section-3,
+.section-4,
+.section-5 {
+  width: 100%;
+}
+.section-2 a {
+  color: white;
+  background: orange;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 20px 0;
+  display: inline-block;
+}
+.section-3,
+.section-4,
+.section-5,
+.section-6 {
+  text-align: center;
+}
+.section-3 ul {
+  padding: 20px 0;;
+}
+.section-3 li {
+  list-style-type: none;
+  display: inline;
+  padding: 10px 20px;
+  border-bottom: 2px solid lightgray;
+}
+.section-3 a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+}
+.section-3 li:first-of-type *{
+  color: orange;
+  border-bottom: 2px solid orange;
+}
+.section-3 li:first-of-type {
+  border-bottom: 2px solid orange;
+}
+.section-3 section {
+  padding: 20px 0;
+}
+.section-3  section img {
+  float: left;
+  display: block;
+  width: 22%;
+  height: 150px;
+  margin: 0 15px;
+  background: orange;
+}
+.section-4 img {
+  width: 3%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.section-4 img,
+.section-4 span {
+  display: block;
+}
+.section-4 section span {
+  color: black;
+  text-transform: none;
+}
+.section-4 .phone-num {
+  font-size: 30px;
+  color: orange;
+}
+.section-4 .phone-num, 
+.section-4 .hours {
+  font-weight: bold;
+}
+.section-4 .hours {
+  font-size: large;
+  padding-top: 10px;
+}
+.section-4 section + section section {
+  float: left;
+  width: 50%;
+  text-align: left;
+  padding: 30px 0;
+}
+.section-5 {
+  padding-top: 140px;
+}
+.section-6 img {
+  width: 4%;
+  padding-top: 20px;
+}
+main .section-6 h5 {
+  font-size: larger;
+  margin: 10px 0 0 0;
+}
+.section-6 .job-title {
+  color: gray;
+  text-transform: none;
+  font-size: small;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
