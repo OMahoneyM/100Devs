@@ -5,17 +5,28 @@
 /* Box Model Hack */
 *{
   box-sizing: border-box;
+  font-family: 'Roboto Slab', Times, serif;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-img{
-  display: block;
-  margin: 0 auto;
+main, header{
+  padding: 3.5% 10%;
 }
 
-
+main{
+  background: red;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+h2{
+  text-transform: capitalize;
+}
+img{
+  width: 250px;
+}
+.hidden{
+  display:none;
+}

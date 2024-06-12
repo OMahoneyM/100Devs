@@ -1,0 +1,60 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', Times, serif;
+}
+html{
+  background: #385252;
+  color: #D1C484;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+main, header{
+  padding: 3.5% 10%;
+}
+main{
+  padding-right: 20%;
+}
+header{
+  text-align: center;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+span{
+  text-align: right;
+  font-weight: bold;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+button{
+  padding: 10px 25px;
+  background-color: #84D1A3;
+  color: black;
+  border: none;
+  font-weight: bold;
+}
+button:hover{
+  background-color: #abf5c8;
+  color: rgb(41, 41, 41);
+}
+
+.title{
+  border-bottom: 3px solid #D1C484;
+}
+
+blockquote{
+  font-family:'Courier New', Courier, monospace;
+}
+
+
