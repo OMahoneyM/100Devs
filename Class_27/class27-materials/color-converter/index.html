@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" />
+    <title>Color Converter</title>
+
+</head>
+<body>
+    <h1>Color Converter</h1>
+    <section>
+        <div class="colorBlock">
+        
+        </div>
+
+        <label for="hexValue">Hexadecimal Code</label>
+        <input type="text" name="hexValue" id="hexValue">
+        <button id="hexSubmit">Convert to RGB</button>
+
+        <label for="rValue">R</label>
+        <input type="text" name="rValue" id="rValue">
+        
+        <label for="gValue">G</label>
+        <input type="text" name="gValue" id="gValue">
+        
+        <label for="bValue">B</label>
+        <input type="text" name="bValue" id="bValue">
+        <button id="rgbSubmit">Convert to Hexadecimal</button>
+    </section>
+
+    <h2>Color Palette Generator</h2>
+        <label for="hexValuePalette">Hexadecimal Code</label>
+        <input type="text" name="hexValuePalette" id="hexValuePalette">
+        <label for="schemePicker">Color Scheme</label>
+        <select name="schemePicker" id="schemePicker">
+            <option value="monochrome">monochrome</option>
+            <option value="monochrome-dark">monochrome-dark</option>
+            <option value="monochrome-light">monochrome-light</option>
+            <option value="analogic">analogic</option>
+            <option value="complement">complement</option>
+            <option value="analogic-complement">analogic-complement</option>
+            <option value="triad">triad</option>
+            <option value="quad">quad</option>
+
+        </select>
+
+        <button id="paletteGen">Generate</button>
+    
+    <section class="palette">
+        
+        <div>
+            <div class="color1"></div>
+            <p class="color1-txt"></p>
+        </div>
+
+        <div>
+            <div class="color2"></div>
+            <p class="color2-txt"></p>
+        </div>
+
+        <div>
+            <div class="color3"></div>
+            <p class="color3-txt"></p>
+        </div>
+
+        <div>
+            <div class="color4"></div>
+            <p class="color4-txt"></p>
+        </div>
+
+        <div>
+            <div class="color5"></div>
+            <p class="color5-txt"></p>
+        </div>    
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
