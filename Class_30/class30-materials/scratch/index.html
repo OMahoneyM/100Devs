@@ -5,15 +5,38 @@
     	<meta name="description" content="This is where your description goes">
     	<meta name="keywords" content="one, two, three">
 
-		<title>Title in the tab</title>
+		<title>Tic Tac Toe</title>
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		<img src="img/turbo.jpg" alt="Power Rangers Turbo">
 
 		<script type="text/javascript" src="js/main.js"></script>
+
+	</head>
+	<body>
+		<main class="background">
+			<section class="title">
+				<h1>Tic Tac Toe</h1>
+			</section>
+			<section class="display">
+				Player <span class="display-player playerX">X</span>'s turn
+			</section>
+			<section class="container">
+				<div class="tile"></div>
+				<div class="tile"></div>
+				<div class="tile"></div>
+				<div class="tile"></div>
+				<div class="tile"></div>
+				<div class="tile"></div>
+				<div class="tile"></div>
+				<div class="tile"></div>
+				<div class="tile"></div>
+			</section>
+			<section class="display announcer hide"></section>
+			<section class="controls">
+				<button id="reset">Reset</button>
+			</section>
+		</main>	
 	</body>
 </html>
